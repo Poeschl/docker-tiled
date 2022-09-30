@@ -7,7 +7,6 @@ on:
 jobs:
   image:
     name: Release image
-    needs: hadolint
     runs-on: ubuntu-latest
     steps:
       - name: ↩️ Checkout
