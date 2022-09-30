@@ -1,6 +1,7 @@
 FROM ubuntu:jammy
 ENV XDG_RUNTIME_DIR /tmp/runtime-root
 
+# hadolint ignore=DL3008
 RUN apt-get update && apt-get -y --no-install-recommends install \
    curl ca-certificates xvfb qtbase5-dev qtbase5-private-dev libqt5svg5-dev qttools5-dev-tools zlib1g-dev qtdeclarative5-dev qtdeclarative5-private-dev qbs && \
    rm -rf /var/lib/apt/lists/*
