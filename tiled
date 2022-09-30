@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+PARAMS=$@
+
+xvfb-run tiled.AppImage --appimage-extract-and-run $PARAMS
